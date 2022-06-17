@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+body {
+    background-color: #FF7978;
+    background-image: url(bg-intro-desktop.png);
+}
+main {
+    display: flex;
+}
+.text {
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 14vw;
+}
+.text h1 {
+    margin-bottom: 35px;
+    font-size: 50px;
+    line-height: 65px;
+    color: white;
+}
+.form {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-header {
+    width: 750px;
+    background: #5D54A3;
+    padding: 20px 175px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0;
+    display: flex;
+    justify-content: center;
+}
+form {
+    background-color: #fff;
+    width: 750px;
+    padding: 50px;
+    border-radius: 7.5px;
+}
+.form-control {
+    text-align: left;
+    margin-bottom: 30px;
+}
+.form-control input {
+    border: 1px solid #777;
+    border-radius: 7.5px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 25px;
+    display: block;
+    width: 100%;
+    color: black;
+}
+input:focus:invalid {
+    background: url("icon-error.svg") no-repeat 95% 50%;
+    outline: none !important;
+    border: 2px solid red;
+}
+.t-s {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.t-s p {
+    color: black;
+    font-size: 16px;
+    opacity: .5;
+    font-weight: 600;
+}
+.t-s p a {
+    color: red;
+    text-decoration: none;
+}
+#submit {
+    background-color: #37CC8A;      
+    border-radius: 7.5px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 20px;
+    color: white;
+    padding: 20px;  
+    border: none;          
+}
+#submit:hover {
+    background-color: white;
+    border: 1px solid #37CC8A;
+    color: #37CC8A;
+    transition: all 0.15s linear;
+}
+@media screen and (max-width: 1440px) {
+    .text {
+        padding-left: 5vw;
+    }
+    
+}
+@media screen and (max-width: 1300px) {
+    main {
+        flex-direction: column;
+    }
+    .text {
+        height: auto;
+        width: 100%;
+        padding: 60px 25vw;
+    }
+    .text h1 {
+        text-align: center;
+    }
+    .text p {
+        text-align: center;
+    }
+    .form {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+    .form-header {
+        width: 100%;
+    }
+    .form-header p {
+        text-align: center;
+    }
+    form {
+        width: 100%;
+    }
+    .t-s {
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width: 565px) {
+    .text {
+        padding: 60px 10vw;
+    }
+    .form-header {
+        padding: 20px 20vw;
+    }
+}
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url(bg-intro-mobile.png);
+    }
+    main {
+        flex-direction: column;
+    }
+    .text {
+        padding: 90px 30px;
+        padding-bottom: 0;
+    }
+    .text h1 {
+        font-size: 28px;
+        line-height: 37px;
+    }
+    .form {
+        padding: 50px 10px;
+    }
+    .form-header {
+        padding: 25px 20px;
+        border-radius: 10px;
+    }
+    .form-header p {
+        text-align: center;
+    }
+    form {
+        padding: 25px;
+    }
+    .form-control {
+        margin-bottom: 25px;
+    }
+    .form-control input {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 20px;
+    }
+    .t-s {
+        padding: 0 15px;
+    }
+    .t-s p {
+        font-size: 12px;
+        text-align: center;
+    }
+    #submit {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        padding: 20px;          
+    }
+}
